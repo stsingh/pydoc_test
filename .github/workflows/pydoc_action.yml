@@ -15,7 +15,7 @@ jobs:
         
         - name: Update README.md  
           run: |
-            pydoc -w README.md
+            python pydoc tuple -w README.md
             git config user.email "sahej3526@gmail.com"
             git config user.name "stsingh"
             git commit -am "Automated report"
