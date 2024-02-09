@@ -13,7 +13,7 @@ jobs:
             sudo apt-get update
             sudo apt-get install python3.10
             python3 -m pip install --upgrade pip
-            pip install pydoc-markdown
+            pip install pydoc
         
         - name: Update README.md  
           run: |
