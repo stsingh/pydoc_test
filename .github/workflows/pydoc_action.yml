@@ -19,5 +19,5 @@ jobs:
           run: |
             pwd
             ls -a
-            pydoc-markdown -m amod -I $(pwd) > README.md
+            python pydoc -w amod
             git push
