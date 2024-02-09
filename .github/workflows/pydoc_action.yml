@@ -12,5 +12,7 @@ jobs:
         - name: Update README.md  
           run: |
             sed -i 's/<reponame>/'${{ github.event.repository.name }}'/' README.md
-            
+            git config user.email "sahej3526@gmail.com"
+            git config user.name "stsingh"
+            git commit -am "Automated report"
             git push
