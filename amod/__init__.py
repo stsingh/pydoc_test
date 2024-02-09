@@ -1,7 +1,6 @@
 class AClass:
     """isaclass"""
 
-
 def ireturnaclass():
     """isafunction
 
