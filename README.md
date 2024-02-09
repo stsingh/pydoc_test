@@ -54,3 +54,17 @@ isafunction
 
 - `amod.AClass` - A class
 
+<a id="amod.ireturndclass"></a>
+
+#### ireturndclass
+
+```python
+def ireturndclass()
+```
+
+isafunction
+
+**Returns**:
+
+- `"AClass"` - A class
+
