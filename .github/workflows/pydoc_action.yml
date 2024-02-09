@@ -17,6 +17,7 @@ jobs:
         
         - name: Update README.md  
           run: |
+            git config --global user.email sahej3526@gmail.com
             git config --global user.name ${{ github.triggering_actor }}
             pydoc-markdown -m amod -I $(pwd) > README.md
             git add README.md
