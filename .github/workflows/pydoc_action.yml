@@ -14,10 +14,8 @@ jobs:
             sudo apt-get install python3.10
             sudo apt install pipx
             pipx install pydoc-markdown
-        
         - name: Update README.md  
           run: |
-            
             git config --global user.name ${{ github.triggering_actor }}
             pydoc-markdown -m amod -I $(pwd) > README.md
             git add README.md

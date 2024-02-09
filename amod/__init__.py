@@ -25,12 +25,3 @@ def ireturncclass():
         amod.AClass: A class
     """
     return AClass()
-
-
-def ireturndclass():
-    """isafunction
-
-    Returns:
-        "AClass": A class
-    """
-    return AClass()
