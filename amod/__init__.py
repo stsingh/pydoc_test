@@ -3,7 +3,6 @@ class AClass:
 
 def ireturnaclass():
     """isafunction
-
     Returns:
         AClass: A class
     """
