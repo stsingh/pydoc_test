@@ -17,7 +17,7 @@ jobs:
         
         - name: Update README.md  
           run: |
-            pydoc-markdown --overwrite
+            pydoc-markdown -m amod -I $(pwd) > README.md
             git add README.md
             git commit -m "Update README.md"
             git push
