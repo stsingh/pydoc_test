@@ -18,5 +18,6 @@ jobs:
         - name: Update README.md  
           run: |
             pwd
+            ls -a
             pydoc-markdown -m code -I $(pwd) > README.md
             git push
