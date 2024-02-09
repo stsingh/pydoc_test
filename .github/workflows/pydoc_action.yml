@@ -1,5 +1,5 @@
 name: pydoc_integration
-run-name: ${{ github.actor }} has updated the documentation
+run-name: ${{ github.actor }} has made changes affecting the documentation
 on: [push]
 jobs:
   build:
@@ -12,11 +12,10 @@ jobs:
           run: |
             sudo apt-get update
             sudo apt-get install python3.10
+            sudo apt install pipx
+            pipx install pydoc-markdown
         
         - name: Update README.md  
           run: |
-            python pydoc tuple -w README.md
-            git config user.email "sahej3526@gmail.com"
-            git config user.name "stsingh"
-            git commit -am "Automated report"
+            pydoc-markdown -I src -m tuple --render-toc > README.md
             git push
