@@ -21,3 +21,9 @@ jobs:
             git add README.md
             git commit -m "Update README.md"
             git push
+
+#typing
+#multiple modules
+#vanilla pydoc
+#documentation branch instead of main
+#gh-pages integration
