@@ -34,6 +34,10 @@ on:
   push:
     branches: [master] # branch to trigger deployment
 
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   pages:
     runs-on: ubuntu-latest
