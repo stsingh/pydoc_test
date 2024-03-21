@@ -10,4 +10,4 @@ Welcome to pydoc_test's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   some-feature.md
+   api.md
