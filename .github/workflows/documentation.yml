@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir doc
           cd doc
-          sphinx-quickstart -q -p ${{ github.event.repository.name }} -a AUVSL -v 1.0 --ext-githubpages --ext-viewcode --ext-coverage --extensions="sphinx.ext.napoleon"
+          sphinx-quickstart -q -p ${{ github.event.repository.name }} -a AUVSL -v 1.0 --ext-githubpages --ext-viewcode --ext-coverage --extensions="sphinx.ext.napoleon","myst_parser"
           cd ..
           sphinx-apidoc -o doc/_build/ modules
           sphinx-build doc doc/_build
