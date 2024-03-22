@@ -21,6 +21,7 @@ jobs:
       - name: Sphinx build
         run: |
           mkdir doc
+          cd doc
           sphinx-quickstart -q -p ${{ github.event.repository.name }} -a AUVSL -v 1.0 --ext-githubpages --ext-viewcode --ext-coverage
           sphinx-apidoc -o doc/_build/ modules
           sphinx-build doc _build
