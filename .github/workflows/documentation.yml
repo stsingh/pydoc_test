@@ -20,7 +20,8 @@ jobs:
           pip install sphinx sphinx_rtd_theme myst_parser
       - name: Sphinx build
         run: |
-          sphinx-quickstart -q -p ${{ github.repository }} -a AUVSL -v 1.0 --ext-githubpages --ext-viewcode --ext-coverage
+          sphinx-quickstart -q -p ${{ github.event.repository.full_name }} -a AUVSL -v 1.0 --ext-githubpages --ext-viewcode --ext-coverage
+          make builder
           sphinx-apidoc -o doc/_build/ modules
           sphinx-build doc _build
       - name: Deploy to GitHub Pages
