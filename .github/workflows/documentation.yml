@@ -25,7 +25,7 @@ jobs:
           sphinx-quickstart -q -p ${{ github.event.repository.name }} -a AUVSL -v 1.0 --ext-githubpages --ext-viewcode --ext-coverage --extensions="sphinx.ext.napoleon"
           cd ..
           sphinx-apidoc -o doc/_build/ modules
-          sphinx-build doc/_build
+          sphinx-build doc doc/_build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
