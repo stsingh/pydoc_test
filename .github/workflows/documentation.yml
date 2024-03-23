@@ -23,6 +23,7 @@ jobs:
           mkdir doc
           cd doc
           sphinx-quickstart -q -p ${{ github.event.repository.name }} -a AUVSL -v 1.0 --ext-githubpages --ext-viewcode --ext-coverage --extensions="sphinx.ext.napoleon","myst_parser"
+          sed -i 'import sys;import os;sys.path.append(os.path.abspath('..'))' config.py
           sed -i 's/alabaster/sphinx_rtd_theme/g' config.py
           cd ..
           sphinx-apidoc -o doc modules
