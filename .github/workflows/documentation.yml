@@ -27,7 +27,7 @@ jobs:
           sed -i 's/alabaster/sphinx_rtd_theme/g' ./conf.py
           cat ./conf.py
           cd ..
-          sphinx-apidoc -o doc modules
+          sphinx-apidoc -o doc src
           sphinx-build doc doc/_build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
