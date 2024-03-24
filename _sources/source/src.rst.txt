@@ -1,0 +1,29 @@
+src package
+===========
+
+Submodules
+----------
+
+src.hello module
+----------------
+
+.. automodule:: src.hello
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.mathops module
+------------------
+
+.. automodule:: src.mathops
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src
+   :members:
+   :undoc-members:
+   :show-inheritance:
